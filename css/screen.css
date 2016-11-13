@@ -1,118 +1,158 @@
-/* CSS Document for Screens */
+    /* CSS Document for Screens */
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
-html {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: #555;
-}
+    html {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        color: #555;
+    }
 
-#page {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-}
+    #page {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
 
-.clearfix {
-    zoom: 1
-}
+    .clearfix {
+        zoom: 1
+    }
 
-.clearfix:after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
-}
+    .clearfix:after {
+        content: '.';
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+    /*text*/
 
+    h1 {
+        margin: 0 0 1em 0;
+        font-size: 2.8em;
+        font-weight: 700;
+    }
 
-/*text*/
+    h2 {
+        margin: 0 0 .5em 0;
+        font-size: 1.6em;
+        font-weight: 700;
+        line-height: 1.1em;
+    }
 
-h1 {
-    margin: 0 0 1em 0;
-    font-size: 2.8em;
-    font-weight: 700;
-}
+    h3 {
+        margin: 0 0 .5em 0;
+        font-size: 1.3em;
+        font-weight: 700;
+    }
 
-h2 {
-    margin: 0 0 .5em 0;
-    font-size: 1.6em;
-    font-weight: 700;
-    line-height: 1.1em;
-}
+    h4 {
+        margin: 0 0 1.5em 0;
+        font-size: 1em;
+        font-weight: 700;
+    }
 
-h3 {
-    margin: 0 0 .5em 0;
-    font-size: 1.3em;
-    font-weight: 700;
-}
+    p {
+        margin: 0 0 1em 0;
+    }
 
-h4 {
-    margin: 0 0 1.5em 0;
-    font-size: 1em;
-    font-weight: 700;
-}
+    a:link {
+        color: #007eff;
+    }
 
-p {
-    margin: 0 0 1em 0;
-}
+    a:visited {
+        color: #65b1ff;
+    }
 
-a:link {
-    color: #007eff;
-}
+    a.btn {
+        font-size: 1.2em;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #fff;
+        padding: 4px 15px;
+        transition: background-color 0.5s;
+        border-radius: 5px;
+    }
 
-a:visited {
-    color: #65b1ff;
-}
+    a.btn:hover {
+        background-color: rgba(0, 0, 0, .3);
+    }
+    /*main*/
 
-a.btn {
-    font-size: 1.2em;
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid #fff;
-    padding: 4px 15px;
-    transition: background-color 0.5s;
-    border-radius: 5px;
-}
+    main {
+        padding: 0 30px;
+    }
+    /*header*/
 
-a.btn:hover {
-    background-color: rgba(0, 0, 0, .3);
-}
+    header {
+        height: 430px;
+        background: #cf0004 url(../image/banner_1200.jpg) no-repeat center bottom;
+        position: relative;
+    }
 
+    header a.logo {
+        position: absolute;
+        display: block;
+        width: 160px;
+        height: 66px;
+        background: url(../image/logo.svg) no-repeat 0 0;
+        background-size: contain;
+        top: 15px;
+        left: 20px;
+    }
 
-/*header*/
+    header div.hero {
+        position: absolute;
+        width: 42%;
+        top: 130px;
+        left: 55%;
+    }
 
-header {
-    height: 430px;
-    background: #cf0004 url(../image/banner_1200.jpg) no-repeat center bottom;
-    position: relative;
-}
+    header div.hero h1 {
+        line-height: 1em;
+        margin: 0 0 30px 0;
+        color: #fff;
+    }
+    /* section-main */
 
-header a.logo {
-    position: absolute;
-    display: block;
-    width: 160px;
-    height: 66px;
-    background: url(../image/logo.svg) no-repeat 0 0;
-    background-size: contain;
-    top: 15px;
-    left: 20px;
-}
+    section {
+        margin: 20px 30px;
+    }
 
-header div.hero {
-    position: absolute;
-    width: 42%;
-    top: 130px;
-    left: 55%;
-}
+    section aside {
+        width: 33%;
+        float: left;
+        text-align: center;
+    }
 
-header div.hero h1 {
-    line-height: 1em;
-    margin: 0 0 30px 0;
-    color: #fff;
-}
+    section aside .content {
+        margin: 15px;
+        background: no-repeat center top;
+        background-size: 75px 75px;
+        padding-top: 85px;
+    }
+
+    section aside .content.tredding {
+        background-image: url(../image/icon_star.svg);
+    }
+
+    section aside .content.find-it {
+        background-image: url(../image/icon_marker.svg);
+    }
+
+    section aside .content.tools {
+        background-image: url(../image/icon_gear.svg);
+    }
+
+    section aside .content h3 a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    section aside .content h3 a:hover {
+        text-decoration: underline;
+    }
