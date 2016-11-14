@@ -18,12 +18,8 @@
         position: relative;
     }
 
-    .clearfix {
-        zoom: 1
-    }
-
-    .clearfix:after {
-        content: '.';
+    section::after {
+        content: '';
         clear: both;
         display: block;
         height: 0;
@@ -121,6 +117,12 @@
 
     section {
         margin: 20px 30px;
+    }
+
+    section::after {
+        content: '';
+        clear: both;
+        display: block;
     }
 
     section aside {
