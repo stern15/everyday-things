@@ -18,12 +18,20 @@
         position: relative;
     }
 
+    section {
+        margin: 20px 30px;
+    }
+
     section::after {
         content: '';
         clear: both;
         display: block;
-        height: 0;
-        visibility: hidden;
+    }
+    /* all section in main*/
+
+    section.atmosphere,
+    section.how-to {
+        margin: 0;
     }
     /*text*/
 
@@ -77,11 +85,6 @@
     a.btn:hover {
         background-color: rgba(0, 0, 0, .3);
     }
-    /*main*/
-
-    main {
-        padding: 0 30px;
-    }
     /*header*/
 
     header {
@@ -115,16 +118,6 @@
     }
     /* section-main */
 
-    section {
-        margin: 20px 30px;
-    }
-
-    section::after {
-        content: '';
-        clear: both;
-        display: block;
-    }
-
     section aside {
         width: 33%;
         float: left;
@@ -150,11 +143,84 @@
         background-image: url(../image/icon_gear.svg);
     }
 
-    section aside .content h3 a {
+    section aside .content h3 a,
+    section aside .content a {
         color: #000;
         text-decoration: none;
     }
 
-    section aside .content h3 a:hover {
+    section aside .content h3 a:hover,
+    section aside .content a:hover {
         text-decoration: underline;
+    }
+    /* section atmosphere */
+
+    section.atmosphere {
+        background-color: #cc6633;
+        color: #fff;
+        padding: 30px;
+    }
+
+    section.atmosphere article {
+        padding: 0 20px 0 515px;
+        background: url(../image/photo_lounge.jpg) no-repeat 0 5px;
+        min-height: 220px;
+    }
+
+    section.how-to {
+        background-color: #eee9d9;
+        position: relative;
+    }
+
+    section.how-to aside {
+        width: 30%;
+        float: left;
+        margin-right: 10px;
+    }
+
+    section.how-to aside .content {
+        padding: 30px 30px 20px 0;
+    }
+
+    section.how-to aside .content img {
+        width: 70%;
+        margin: 0 15% 15% 15%;
+        display: block;
+        padding: 0 auto;
+    }
+
+    section.how-to aside .content p {
+        font-size: .8em;
+    }
+
+    section.how-to aside .content a {
+        color: #cc6633;
+        font-weight: 700;
+    }
+
+    section.how-to blockquote {
+        width: 32%;
+        color: #444;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        right: 4%;
+    }
+
+    section.how-to blockquote p {
+        margin: 30px 30px 20px 50px;
+    }
+
+    section.how-to blockquote p.quote {
+        font-style: italic;
+        font-size: 1.2em;
+    }
+
+    section.how-to blockquote p.credit {
+        color: #777;
+        margin-top: 0;
+        font-size: 0.9em;
+        padding-left: 20px;
+        line-height: 1.3em;
+        position: relative;
     }
