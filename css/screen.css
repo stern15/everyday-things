@@ -1,77 +1,78 @@
                 /* CSS Document for Screens */
-                
+
                 * {
                     padding: 0;
                     margin: 0;
                     box-sizing: border-box;
                 }
-                
+
                 html {
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 300;
                     color: #555;
                 }
-                
+
                 #page {
                     max-width: 1200px;
                     margin: 0 auto;
                     position: relative;
                 }
-                
+
                 section {
                     margin: 20px 30px;
                 }
-                
+
                 section::after {
                     content: '';
                     clear: both;
                     display: block;
                 }
                 /* all section in main*/
-                
+
                 section.atmosphere,
                 section.how-to {
                     margin: 0;
                 }
                 /*text*/
-                
+
                 h1 {
                     margin: 0 0 1em 0;
                     font-size: 2.8em;
                     font-weight: 700;
                 }
-                
+
                 h2 {
                     margin: 0 0 .5em 0;
                     font-size: 1.6em;
                     font-weight: 700;
                     line-height: 1.1em;
+                    width: 110%;
                 }
-                
+
                 h3 {
                     margin: 0 0 .5em 0;
                     font-size: 1.3em;
                     font-weight: 700;
                 }
-                
+
                 h4 {
                     margin: 0 0 1.5em 0;
                     font-size: 1em;
                     font-weight: 700;
                 }
-                
+
                 p {
                     margin: 0 0 1em 0;
                 }
-                
+
                 a:link {
                     color: #007eff;
                 }
-                
+
                 a:visited {
                     color: #65b1ff;
                 }
-                
+
                 a.btn {
                     font-size: 1.2em;
                     color: #fff;
@@ -81,18 +82,18 @@
                     transition: background-color 0.5s;
                     border-radius: 5px;
                 }
-                
+
                 a.btn:hover {
                     background-color: rgba(0, 0, 0, .3);
                 }
                 /*header*/
-                
+
                 header {
                     height: 430px;
                     background: #cf0004 url(../image/banner_1200.jpg) no-repeat center bottom;
                     position: relative;
                 }
-                
+
                 header a.logo {
                     position: absolute;
                     display: block;
@@ -104,102 +105,102 @@
                     left: 20px;
                     z-index: 1;
                 }
-                
+
                 header div.hero {
                     position: absolute;
                     width: 42%;
                     top: 160px;
                     left: 64%;
                 }
-                
+
                 header div.hero h1 {
                     line-height: 1em;
                     margin: 0 0 30px 0;
                     color: #fff;
                 }
                 /* section-main */
-                
+
                 section aside {
                     width: 33%;
                     float: left;
                     text-align: center;
                 }
-                
+
                 section aside .content {
                     margin: 15px;
                     background: no-repeat center top;
                     background-size: 75px 75px;
                     padding-top: 85px;
                 }
-                
+
                 section aside .content.tredding {
                     background-image: url(../image/icon_star.svg);
                 }
-                
+
                 section aside .content.find-it {
                     background-image: url(../image/icon_marker.svg);
                 }
-                
+
                 section aside .content.tools {
                     background-image: url(../image/icon_gear.svg);
                 }
-                
+
                 section aside .content h3 a,
                 section aside .content a {
                     color: #000;
                     text-decoration: none;
                 }
-                
+
                 section aside .content h3 a:hover,
                 section aside .content a:hover {
                     text-decoration: underline;
                 }
                 /* section atmosphere */
-                
+
                 section.atmosphere {
                     background-color: #cc6633;
                     color: #fff;
                     padding: 30px;
                 }
-                
+
                 section.atmosphere article {
                     padding: 0 20px 0 515px;
                     background: url(../image/photo_lounge.jpg) no-repeat 0 5px;
                     min-height: 220px;
                 }
                 /* section how to */
-                
+
                 section.how-to {
                     background-color: #eee9d9;
                     position: relative;
                 }
-                
+
                 section.how-to aside {
                     width: 30%;
                     float: left;
                     margin-right: 10px;
                 }
-                
+
                 section.how-to aside .content {
                     padding: 30px 30px 20px 0;
                 }
-                
+
                 section.how-to aside .content img {
                     width: 70%;
                     margin: 0 15% 15% 15%;
                     display: block;
                     padding: 0 auto;
                 }
-                
+
                 section.how-to aside .content p {
                     font-size: .8em;
                 }
-                
+
                 section.how-to aside .content a {
                     color: #cc6633;
                     font-weight: 700;
                 }
-                
+
                 section.how-to blockquote {
                     width: 32%;
                     color: #444;
@@ -208,16 +209,16 @@
                     bottom: 0;
                     right: 4%;
                 }
-                
+
                 section.how-to blockquote p {
                     margin: 30px 30px 20px 50px;
                 }
-                
+
                 section.how-to blockquote p.quote {
                     font-style: italic;
                     font-size: 1.2em;
                 }
-                
+
                 section.how-to blockquote p.credit {
                     color: #777;
                     margin-top: 0;
@@ -226,7 +227,7 @@
                     line-height: 1.3em;
                     position: relative;
                 }
-                
+
                 section.how-to blockquote p.quote::before {
                     content: "\201c";
                     color: #d2bd65;
@@ -236,7 +237,7 @@
                     font-size: 5em;
                     font-family: serif;
                 }
-                
+
                 section.how-to blockquote p.credit::before {
                     content: "\2014";
                     position: absolute;
@@ -244,7 +245,7 @@
                     left: 0;
                 }
                 /* navigation */
-                
+
                 nav {
                     background-color: rgba(0, 0, 0, .65);
                     position: absolute;
@@ -253,33 +254,33 @@
                     width: 100%;
                     height: 100px;
                 }
-                
+
                 nav::after {
                     content: "";
                     display: block;
                     clear: both;
                 }
-                
+
                 nav ul {
                     list-style: none;
                     margin: 0;
                     padding: 0;
                 }
-                
+
                 nav ul li:hover,
                 nav ul li:active {
                     transition: background-color 0.5s;
                 }
-                
+
                 nav ul li:hover,
                 nav ul li:active {
                     background-color: #2b0306;
                 }
-                
+
                 nav ul li:hover > ul {
                     display: block;
                 }
-                
+
                 nav ul li a:link,
                 nav ul li a:visited {
                     display: inline-block;
@@ -290,72 +291,72 @@
                     text-align: center;
                     transition: background-color 0.5s;
                 }
-                
+
                 nav ul li a:hover,
                 nav ul li a:active {
                     background-color: #6d0911;
                 }
-                
+
                 nav ul li a:link,
                 nav ul li a:visited {
                     color: #fff;
                 }
-                
+
                 nav ul ul {
                     position: absolute;
                     top: 100%;
                     background-color: #2b0306;
                     display: none;
                 }
-                
+
                 nav ul ul li {
                     position: relative;
                 }
-                
+
                 nav ul ul ul {
                     left: 100%;
                     top: 0;
                 }
                 /* top level */
-                
+
                 nav > ul {
-                    padding: 58px 0 0 400px;
+                    padding: 58px 0 0 235px;
                 }
-                
+
                 nav > ul > li {
                     float: left;
                 }
-                
+
                 nav > ul > li > a {
                     width: auto;
                     padding: 10px 20px 15px 20px;
                 }
                 /* footer section */
-                
+
                 footer {
                     font-size: .8em;
                     margin: 40px;
                     color: #999;
                     text-align: center;
                 }
-                
+
                 footer .content,
                 footer p {
                     display: inline;
                 }
-                
+
                 footer a:link,
                 footer a:visited {
                     margin-left: 30px;
                     color: #777;
                 }
-                
+
                 footer a:hover,
                 footer a:active {
                     color: #000;
                 }
                 /* Media queries */
-                
+
                 @media screen and (max-width:1000px) {
                     h1 {
                         font-size: 2.4em;
@@ -371,5 +372,37 @@
                     section.atmosphere article {
                         padding-left: 400px;
                         background-size: 375px auto;
+                    }
+                }
+
+                @media screen and (max-width:860px) {
+                    h1 {
+                        font-size: 2.2em;
+                    }
+                    h2 {
+                        font-size: 1.8em;
+                    }
+                    /* header */
+                    header {
+                        height: 300px;
+                        width: 100%;
+                        background-image: url(../image/banner_825.jpg) no-repeat;
+                    }
+                    header div.hero {
+                        top: 120px;
+                        left: 60%;
+                    }
+                    /* atmosphere section */
+                    section.atmosphere article {
+                        padding-left: 350px;
+                        background-size: 315px auto;
+                    }
+                    /* how to section */
+                    section.how-to blockquote p.quote {
+                        font-size: 1.2em;
+                        line-height: 1.1em;
+                    }
+                    section.how-to blockquote p.credit {
+                        font-size: 0.85em;
                     }
                 }
