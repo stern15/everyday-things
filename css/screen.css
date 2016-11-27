@@ -336,7 +336,7 @@ nav ul ul ul {
 /* top level */
 
 nav > ul {
-    padding: 58px 0 0 230px;
+    padding: 38px 0 0 230px;
 }
 
 nav > ul > li {
@@ -529,6 +529,7 @@ footer a:active {
     section.how-to aside div.content {
         padding: 20px 20px 20px 150px;
         margin: 0;
+        text-align: left;
     }
     section.how-to aside div.content p {
         font-size: .9em;
@@ -537,12 +538,12 @@ footer a:active {
         display: inline-block;
         width: 125px;
         position: absolute;
-        top: 60px;
+        top: 43px;
         left: -77px;
     }
     section.how-to blockquote {
-        margin: 0 20px 0 40px;
-        width: 90%;
+        margin: 0 20px 0 86px;
+        width: 80%;
         padding: 1px 0 20px 0;
         position: relative;
     }
@@ -550,12 +551,46 @@ footer a:active {
         margin-bottom: 0;
     }
     /* navigation */
-    nav > ul {
-        padding-top: 25px;
-    }
     nav {
         position: static;
         width: auto;
-        background-color: #4b0a0c;
+    }
+    nav > ul {
+        padding: 20px 0;
+        background-color: #2b0306;
+    }
+    nav > ul > li {
+        float: none;
+    }
+    nav ul li a:link,
+    nav ul li a:visited {
+        width: auto;
+        display: block;
+        margin: 10px 10px;
+        border: 1px solid rgba(255, 255, 255, .25);
+    }
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, .25);
+    }
+    nav ul ul {
+        background: none;
+    }
+    a.firstSub {
+        margin-left: 30px;
+    }
+    nav ul,
+    nav ul ul,
+    nav ul ul ul {
+        display: block;
+        position: static;
+    }
+    /* footer */
+    footer {
+        position: static;
+        margin-top: 740px;
+        line-height: 30px;
+    }
+    footer div.content {
+        display: block;
     }
 }
