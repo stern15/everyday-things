@@ -201,7 +201,7 @@ section.how-to aside .content img {
     width: 70%;
     margin: 0 15% 15% 15%;
     display: block;
-    padding: 0 auto;
+    padding: 0px auto;
 }
 
 section.how-to aside .content p {
@@ -406,7 +406,7 @@ footer a:active {
     header {
         height: 300px;
         width: 100%;
-        background-image: url(../image/banner_825.jpg) no-repeat;
+        background: url(../image/banner_825.jpg) no-repeat;
     }
     header div.hero {
         top: 150px;
@@ -596,5 +596,36 @@ footer a:active {
     }
     footer div.content {
         display: block;
+    }
+}
+
+@media screen and (max-width:425px) {
+    /* header */
+    header {
+        height: 110px;
+        background-image: url(../image/banner_425.jpg);
+        background-size: cover;
+    }
+    header a.logo {
+        height: 50px;
+        background: rgba(0, 0, 0, .65) url(../image/logo_small.svg) no-repeat center center;
+        background-size: 170px 30px;
+    }
+    header div.hero {
+        text-align: center;
+        width: 100%;
+        left: 0;
+        top: 54px;
+    }
+    header div.hero h1 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    header div.hero a.btn {
+        padding: 2px 30px;
+        font-size: .8em;
+    }
+    header div.hero a.btn span {
+        display: none;
     }
 }
