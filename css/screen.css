@@ -425,6 +425,9 @@ footer a:active {
     section.how-to blockquote p.credit {
         font-size: 0.85em;
     }
+    section.how-to blockquote p.quote::before {
+        top: 40px
+    }
 }
 
 @media screen and (max-width:760px) {
@@ -537,28 +540,22 @@ footer a:active {
         top: 60px;
         left: -77px;
     }
-}
-
-section.how-to blockquote {
-    margin: 0 20px 0 40px;
-    width: 90%;
-    padding: 1px 0 20px 0;
-    position: relative;
-}
-
-section.how-to blockquote p.credit {
-    margin-bottom: 0;
-}
-
-
-/* navigation */
-
-nav > ul {
-    padding-top: 25px;
-}
-
-nav {
-    position: static;
-    width: auto;
-    background-color: #4b0a0c;
+    section.how-to blockquote {
+        margin: 0 20px 0 40px;
+        width: 90%;
+        padding: 1px 0 20px 0;
+        position: relative;
+    }
+    section.how-to blockquote p.credit {
+        margin-bottom: 0;
+    }
+    /* navigation */
+    nav > ul {
+        padding-top: 25px;
+    }
+    nav {
+        position: static;
+        width: auto;
+        background-color: #4b0a0c;
+    }
 }
