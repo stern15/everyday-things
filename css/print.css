@@ -52,3 +52,32 @@ a:visited {
 nav {
     display: none;
 }
+
+header {
+    position: relative;
+}
+
+header::after {
+    content: url(../image/banner_1300_print.jpg);
+    width: 90%;
+}
+
+header a.logo {
+    display: block;
+    width: 145px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+header a.logo::after {
+    content: url(../image/logo_print.svg);
+}
+
+header div.hero {
+    width: 75%;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+}
