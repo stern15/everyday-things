@@ -65,8 +65,13 @@ header {
 }
 
 header::after {
-    content: url(../image/banner_1300_print.jpg);
-    width: 90%;
+    content: '';
+    background-image: url(../image/banner_1300_print.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 260px;
+    display: inline-block;
+    background-repeat: no-repeat;
 }
 
 header a.logo {
@@ -74,8 +79,8 @@ header a.logo {
     width: 145px;
     height: 60px;
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 45px;
+    left: 100px;
 }
 
 header a.logo::before {
@@ -97,6 +102,49 @@ header div.hero a::after {
 header div.hero {
     width: 75%;
     position: absolute;
-    top: 110px;
-    left: 20px;
+    top: 140px;
+    left: 100px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+section.main {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+section.main aside {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+section.main aside div.content {
+    margin: 15px;
+}
+
+section.main aside div.content a::after {
+    display: block;
+    font-family: serif;
+    font-weight: normal;
+}
+
+section.main aside div.content.tredding::before {
+    content: url(../image/icon_star_print.svg);
+}
+
+section.main aside div.content.find-it::before {
+    content: url(../image/icon_marker_print.svg);
+}
+
+section.main aside div.content.tools::before {
+    content: url(../image/icon_gear_print.svg);
 }
