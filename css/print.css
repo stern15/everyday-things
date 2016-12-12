@@ -154,6 +154,7 @@ section.atmosphere {
     padding-top: 50px;
     border-top: 1px #ccc solid;
     position: relative;
+    page-break-after: always;
 }
 
 section.atmosphere::before {
