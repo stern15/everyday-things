@@ -148,3 +148,120 @@ section.main aside div.content.find-it::before {
 section.main aside div.content.tools::before {
     content: url(../image/icon_gear_print.svg);
 }
+
+section.atmosphere {
+    margin-bottom: 40px;
+    padding-top: 50px;
+    border-top: 1px #ccc solid;
+    position: relative;
+}
+
+section.atmosphere::before {
+    content: url(../image/photo_lounge_print.jpg);
+}
+
+section.atmosphere article {
+    width: 40%;
+    position: absolute;
+    top: 40px;
+    left: 425px;
+}
+
+section.how-to {
+    padding-top: 50px;
+    border-top: 1px #ccc solid;
+}
+
+section.how-to aside {
+    float: left;
+    width: 25%;
+    margin: 0 35px 0 0;
+}
+
+section.how-to div.content img {
+    display: none;
+}
+
+section.how-to aside:nth-child(1) div.content::before {
+    content: url(../image/photo_seating_print.jpg);
+}
+
+section.how-to aside:nth-child(2) div.content::before {
+    content: url(../image/photo_lighting_print.jpg);
+}
+
+section.how-to blockquote {
+    width: 30%;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+}
+
+section.how-to blockquote::before {
+    content: '\201c';
+    color: #ccc;
+    font-size: 5em;
+    font-family: serif;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    left: -45px;
+}
+
+section.how-to blockquote p.quote {
+    font-style: italic;
+    font-size: 1.4em;
+    color: #888;
+}
+
+section.how-to blockquote p.quote::after {
+    content: '\201d';
+    font-family: serif;
+}
+
+section.how-to blockquote p.credit {
+    padding-left: 20px;
+    position: relative;
+}
+
+section.how-to blockquote p.credit::before {
+    content: '\2014';
+    position: absolute;
+    left: 0px;
+    top: -1px;
+}
+
+footer {
+    border-top: 1px #ccc solid;
+    position: relative;
+    min-height: 20px;
+    text-align: center;
+}
+
+footer::after {
+    content: url(../image/qr_codifydesign.png);
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+footer a {
+    display: block;
+    margin-top: 15px;
+}
+
+footer a::after {
+    display: block;
+}
+
+footer div.content {
+    padding-left: 20px;
+}
+
+footer div.content::after {
+    content: 'This page was printed from http://codifydesign.com';
+    display: block;
+    margin-top: 30px;
+    font-size: .9em;
+    font-style: italic;
+}
